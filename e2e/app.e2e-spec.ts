@@ -18,15 +18,15 @@ import { ActionComponent } from '../src/app/action/action.component';
 import { PrestigeComponent } from '../src/app/prestige/prestige.component';
 import {Format,FilterListNotEmpty,FilterMax } from  '../src/app/app.module';
 
-describe('idle-ant App', () => {
+describe('idle-store App', () => {
   let page: IdleAntPage;
 
   beforeEach(() => {
-    page = new IdleAntPage();
+    page = new IdleStorePage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Welcome to IdleStore!');
   });
 });
